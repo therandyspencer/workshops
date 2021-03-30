@@ -9,6 +9,7 @@
 
 ### Instructions
 Simply execute the `installer/installer.sh` script to step through executing the recipes.
+The installer will install chef workstation on client node, but it is ok if it is already there.
 
 ## Windows Server 2019
 ### Requirements
