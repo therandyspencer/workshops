@@ -63,7 +63,7 @@ end
 
 
 
-file '/etc/systemd/system/tomcat.service' do
+file "/etc/systemd/system/tomcat.service' do
     action :create
     content '# Systemd unit file for tomcat
     [Unit]
@@ -90,7 +90,7 @@ file '/etc/systemd/system/tomcat.service' do
     Restart=always
     
     [Install]
-    WantedBy=multi-user.target'
+    WantedBy=multi-user.target"
     notifies :run, 'execute[tomcat daemon reload]', :immediately
 end
 
