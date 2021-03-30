@@ -6,7 +6,7 @@
 # configure yum repo
 yum_repository 'mongodb' do
     description 'MongoDB Repository'
-    baseurl 'http://downloads-distro.mongodb.org/repo/redhat/os/x86_64'
+    baseurl 'https://repo.mongodb.org/yum/redhat/7/mongodb-org/'
     action :create
     gpgcheck false
     enabled true
