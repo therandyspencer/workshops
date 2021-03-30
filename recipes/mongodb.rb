@@ -20,5 +20,5 @@ end
 
 # Ensure the service is running
 service 'mongod' do
-    action [:start, :enabled]
+    action [:start, :enable]
 end
