@@ -63,9 +63,9 @@ end
 
 
 
-file "/etc/systemd/system/tomcat.service' do
+file '/etc/systemd/system/tomcat.service' do
     action :create
-    content '# Systemd unit file for tomcat
+    content "# Systemd unit file for tomcat
     [Unit]
     Description=Apache Tomcat Web Application Container
     After=syslog.target network.target
