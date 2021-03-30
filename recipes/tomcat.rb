@@ -1,5 +1,5 @@
 package 'java-1.7.0-openjdk-devel' do
-    action :installed
+    action :install
 end
 
 group 'tomcat' do
