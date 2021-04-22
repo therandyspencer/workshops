@@ -1,6 +1,6 @@
 name 'InstallMongoDB'
-maintainer 'The Authors'
-maintainer_email 'you@example.com'
+maintainer 'Randy Spencer'
+maintainer_email 'therandyspencer@gmail.com'
 license 'All Rights Reserved'
 description 'Installs/Configures InstallMongoDB'
 version '0.1.0'
