@@ -22,31 +22,6 @@ end
 describe directory('/opt/tomcat') do
   it { should exist }
   its('group') { should eq 'tomcat' }
-  its('owner') { should eq 'tomcat' }
-end
-
-# rspencer - verify directory was unpacked correctly and permissions were updated
-describe directory('/opt/tomcat/webapps') do
-  it { should exist }
-  its('group') { should eq 'tomcat' }
-end
-
-# rspencer - verify directory was unpacked correctly and permissions were updated
-describe directory('/opt/tomcat/work') do
-  it { should exist }
-  its('group') { should eq 'tomcat' }
-end
-
-# rspencer - verify directory was unpacked correctly and permissions were updated
-describe directory('/opt/tomcat/temp') do
-  it { should exist }
-  its('group') { should eq 'tomcat' }
-end
-
-# rspencer - verify directory was unpacked correctly and permissions were updated
-describe directory('/opt/tomcat/logs') do
-  it { should exist }
-  its('group') { should eq 'tomcat' }
 end
 
 # rspencer - verify tomcat config file was created

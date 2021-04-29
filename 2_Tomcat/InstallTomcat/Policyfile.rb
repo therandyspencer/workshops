@@ -10,7 +10,7 @@ name 'InstallTomcat'
 default_source :supermarket
 
 # run_list: chef-client will run these recipes in the order specified.
-run_list 'InstallTomcat::AddPackage', 'InstallTomcat::AddLinuxUser', 'InstallTomcat::WgetFile',
+run_list 'InstallTomcat::AddPackage', 'InstallTomcat::AddLinuxUser', 'InstallTomcat::PullRemoteFile',
 'InstallTomcat::CreateConfigFile', 'InstallTomcat::PrepareService'
 
 # Specify a custom source for a single cookbook:

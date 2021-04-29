@@ -1,4 +1,4 @@
-# InstallTomcat
+# InstallTomcatV2
 
 This cookbook will install tomcat on a centos/RHEL 7 machine. The important files are noted below.
 
@@ -18,3 +18,9 @@ This cookbook will install tomcat on a centos/RHEL 7 machine. The important file
   - This file gives the platforms available and gives the path to the inspec test file
 - test/integration/default/default_test.rb
   - This file contains the tests to verify the recipes ran successfully.
+
+- CHANGES FOR V2
+- Removed recipes/WgetFile.rb
+- Created recipes/PullRemoteFile
+- Updated Policyfile.rb
+- Removed extra inspec tests used for development

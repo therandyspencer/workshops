@@ -16,12 +16,5 @@ user 'tomcat' do
   manage_home false
   home '/opt/tomcat'
   shell '/bin/nologin'
-end
-
-# rspencer - create tomcat home directory
-directory '/opt/tomcat' do
-  owner 'tomcat'
-  group 'tomcat'
-  mode '0755'
   action :create
 end

@@ -35,6 +35,7 @@ file '/etc/systemd/system/tomcat.service' do
   mode '0755'
   owner 'root'
   group 'root'
+  action :create
 end
 
 # rspencer - reload service to apply new config
