@@ -1,0 +1,53 @@
+{
+  "revision_id": "81702f0bf01c7de5d6e4303b5f99e29e9b20e524f952fa1af4ab93fa5a52fa6f",
+  "name": "TestServer2019",
+  "run_list": [
+    "recipe[TestServer2019::RemediateServer2019]"
+  ],
+  "included_policy_locks": [
+
+  ],
+  "cookbook_locks": {
+    "TestServer2019": {
+      "version": "0.1.0",
+      "identifier": "e30b840b98eb166429222bb0de34ec614b0123a3",
+      "dotted_decimal_identifier": "63907481471478550.28192724409703988.259902614348707",
+      "source": ".",
+      "cache_key": null,
+      "scm_info": {
+        "scm": "git",
+        "remote": null,
+        "revision": "bb1c5ec68ef35663ebf4efbfb7513e2509d2eae8",
+        "working_tree_clean": true,
+        "published": true,
+        "synchronized_remote_branches": [
+          "origin/HEAD -> origin/master",
+          "origin/InstallTomcatV2",
+          "origin/master"
+        ]
+      },
+      "source_options": {
+        "path": "."
+      }
+    }
+  },
+  "default_attributes": {
+
+  },
+  "override_attributes": {
+
+  },
+  "solution_dependencies": {
+    "Policyfile": [
+      [
+        "TestServer2019",
+        ">= 0.0.0"
+      ]
+    ],
+    "dependencies": {
+      "TestServer2019 (0.1.0)": [
+
+      ]
+    }
+  }
+}
