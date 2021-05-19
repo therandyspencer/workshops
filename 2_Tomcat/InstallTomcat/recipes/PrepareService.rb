@@ -6,10 +6,6 @@
 
 # rspencer - start tomcat
 service 'tomcat' do
-  action :start
-end
-
-# rspencer - start tomcat on boot
-service 'tomcat' do
-  action :enable
+  supports status: true, restart: true, reload: true
+  action [ :enable, :start ]
 end

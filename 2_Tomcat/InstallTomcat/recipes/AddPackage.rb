@@ -8,8 +8,3 @@
 yum_package 'java-1.8.0-openjdk-devel' do
   action :install
 end
-
-# rspencer - install wget package
-yum_package 'wget' do
-  action :install
-end
