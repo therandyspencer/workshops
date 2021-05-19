@@ -5,7 +5,7 @@
 # Copyright:: 2021, The Authors, All Rights Reserved.
 
 # rspencer - Pull tarball from apache
-remote_file '/tmp/apache.tar.gz' do
+remote_file "#{Chef::Config[:file_cache_path]}/apache.tar.gz" do
   owner 'tomcat'
   group 'tomcat'
   source 'https://archive.apache.org/dist/tomcat/tomcat-8/v8.5.65/bin/apache-tomcat-8.5.65.tar.gz'
@@ -14,7 +14,7 @@ remote_file '/tmp/apache.tar.gz' do
 end
 
 # rspencer - Unpack tarball
-archive_file '/tmp/apache.tar.gz' do
+archive_file "#{Chef::Config[:file_cache_path]}/apache.tar.gz" do
   group 'tomcat'
   owner 'tomcat'
   mode '755'
