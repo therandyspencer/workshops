@@ -5,7 +5,7 @@
 # Copyright:: 2021, The Authors, All Rights Reserved.
 
 # rspencer - Create config file for tomcat
-case node[:platform]
+case node['platform']
 when 'redhat', 'centos'
   template '/etc/systemd/system/tomcat.service' do
     source 'centos-tomcat.erb'
@@ -23,7 +23,6 @@ when 'ubuntu', 'debian'
     action :create
   end
 end
-
 
 # rspencer - reload service to apply new config
 service 'tomcat' do
